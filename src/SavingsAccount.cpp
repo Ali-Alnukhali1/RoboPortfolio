@@ -4,7 +4,6 @@
 #define SAVINGSACCOUNT_HPP.
 
 //this is in master branch
-
 class SavingsAccount : public BaseAccount{
     public:
 
@@ -24,4 +23,5 @@ class SavingsAccount : public BaseAccount{
 }
 };
 
+// this should appear ony only in NEW
 #endif
