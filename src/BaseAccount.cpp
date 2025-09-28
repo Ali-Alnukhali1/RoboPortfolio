@@ -43,7 +43,7 @@ void BaseAccount::apply(const TxRecord& tx) {
         case TxKind::Interest:
                 //apply intreset
             break;
-        case TxKind::TA
+        default:
             // Optional: handle unknown kinds
             std::cerr << "Unknown transaction kind!\n";
             break;

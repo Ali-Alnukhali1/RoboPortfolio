@@ -1,7 +1,7 @@
 #include "BaseAccount.hpp"
 
 #ifndef SAVINGSACCOUNT_HPP
-#define SAVINGSACCOUNT_HPP.
+#define SAVINGSACCOUNT_HPP
 
 //this is in master branch
 class SavingsAccount : public BaseAccount{

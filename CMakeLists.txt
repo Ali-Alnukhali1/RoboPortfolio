@@ -23,3 +23,6 @@ add_executable(RoboBank_Portfolio ${SRC_FILES})
 target_compile_options(RoboBank_Portfolio PRIVATE -Wall -Wextra -pedantic)
 
 target_include_directories(RoboBank_Portfolio PRIVATE src)
+# Link Google Test
+find_package(GTest REQUIRED)
+target_link_libraries(RoboBank_Portfolio PRIVATE GTest::GTest GTest::Main pthread)

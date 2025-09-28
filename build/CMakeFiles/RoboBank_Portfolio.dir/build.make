@@ -204,6 +204,8 @@ RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o
 RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o
 RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o
 RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/build.make
+RoboBank_Portfolio: /usr/lib/x86_64-linux-gnu/libgtest_main.a
+RoboBank_Portfolio: /usr/lib/x86_64-linux-gnu/libgtest.a
 RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable RoboBank_Portfolio"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RoboBank_Portfolio.dir/link.txt --verbose=$(VERBOSE)
