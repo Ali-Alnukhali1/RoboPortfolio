@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/fathi/training_projects/RoboBank_Portfolio/src
 
-CXX_FLAGS = -Wall -Wextra -pedantic -DGTEST_HAS_PTHREAD=1 -std=gnu++17
+CXX_FLAGS = -std=gnu++17
 

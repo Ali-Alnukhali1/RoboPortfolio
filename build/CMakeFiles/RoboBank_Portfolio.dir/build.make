@@ -83,131 +83,18 @@ CMakeFiles/RoboBank_Portfolio.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoboBank_Portfolio.dir/src/main.cpp.s"
 	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fathi/training_projects/RoboBank_Portfolio/src/main.cpp -o CMakeFiles/RoboBank_Portfolio.dir/src/main.cpp.s
 
-CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/flags.make
-CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.o: ../src/BaseAccount.cpp
-CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.o"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.o -MF CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.o.d -o CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.o -c /home/fathi/training_projects/RoboBank_Portfolio/src/BaseAccount.cpp
-
-CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.i"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fathi/training_projects/RoboBank_Portfolio/src/BaseAccount.cpp > CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.i
-
-CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.s"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fathi/training_projects/RoboBank_Portfolio/src/BaseAccount.cpp -o CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.s
-
-CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/flags.make
-CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.o: ../src/CheckingAccount.cpp
-CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.o"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.o -MF CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.o.d -o CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.o -c /home/fathi/training_projects/RoboBank_Portfolio/src/CheckingAccount.cpp
-
-CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.i"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fathi/training_projects/RoboBank_Portfolio/src/CheckingAccount.cpp > CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.i
-
-CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.s"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fathi/training_projects/RoboBank_Portfolio/src/CheckingAccount.cpp -o CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.s
-
-CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/flags.make
-CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.o: ../src/SavingsAccount.cpp
-CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.o"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.o -MF CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.o.d -o CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.o -c /home/fathi/training_projects/RoboBank_Portfolio/src/SavingsAccount.cpp
-
-CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.i"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fathi/training_projects/RoboBank_Portfolio/src/SavingsAccount.cpp > CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.i
-
-CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.s"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fathi/training_projects/RoboBank_Portfolio/src/SavingsAccount.cpp -o CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.s
-
-CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/flags.make
-CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.o: ../src/Portfolio.cpp
-CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.o"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.o -MF CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.o.d -o CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.o -c /home/fathi/training_projects/RoboBank_Portfolio/src/Portfolio.cpp
-
-CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.i"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fathi/training_projects/RoboBank_Portfolio/src/Portfolio.cpp > CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.i
-
-CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.s"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fathi/training_projects/RoboBank_Portfolio/src/Portfolio.cpp -o CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.s
-
-CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/flags.make
-CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o: ../src/RoboLedger.cpp
-CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o -MF CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o.d -o CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o -c /home/fathi/training_projects/RoboBank_Portfolio/src/RoboLedger.cpp
-
-CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.i"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fathi/training_projects/RoboBank_Portfolio/src/RoboLedger.cpp > CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.i
-
-CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.s"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fathi/training_projects/RoboBank_Portfolio/src/RoboLedger.cpp -o CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.s
-
-CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/flags.make
-CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o: ../src/robocalculator.cpp
-CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o -MF CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o.d -o CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o -c /home/fathi/training_projects/RoboBank_Portfolio/src/robocalculator.cpp
-
-CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.i"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fathi/training_projects/RoboBank_Portfolio/src/robocalculator.cpp > CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.i
-
-CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.s"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fathi/training_projects/RoboBank_Portfolio/src/robocalculator.cpp -o CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.s
-
-CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/flags.make
-CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o: ../src/IAccount.cpp
-CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o: CMakeFiles/RoboBank_Portfolio.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o -MF CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o.d -o CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o -c /home/fathi/training_projects/RoboBank_Portfolio/src/IAccount.cpp
-
-CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.i"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fathi/training_projects/RoboBank_Portfolio/src/IAccount.cpp > CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.i
-
-CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.s"
-	/usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fathi/training_projects/RoboBank_Portfolio/src/IAccount.cpp -o CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.s
-
 # Object files for target RoboBank_Portfolio
 RoboBank_Portfolio_OBJECTS = \
-"CMakeFiles/RoboBank_Portfolio.dir/src/main.cpp.o" \
-"CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.o" \
-"CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.o" \
-"CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.o" \
-"CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.o" \
-"CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o" \
-"CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o" \
-"CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o"
+"CMakeFiles/RoboBank_Portfolio.dir/src/main.cpp.o"
 
 # External object files for target RoboBank_Portfolio
 RoboBank_Portfolio_EXTERNAL_OBJECTS =
 
 RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/main.cpp.o
-RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.o
-RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.o
-RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.o
-RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.o
-RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o
-RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o
-RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o
 RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/build.make
-RoboBank_Portfolio: /usr/lib/x86_64-linux-gnu/libgtest_main.a
-RoboBank_Portfolio: /usr/lib/x86_64-linux-gnu/libgtest.a
+RoboBank_Portfolio: libRoboBankLib.a
 RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable RoboBank_Portfolio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable RoboBank_Portfolio"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RoboBank_Portfolio.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

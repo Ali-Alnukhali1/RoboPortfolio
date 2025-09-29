@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named RoboBankLib
+
+# Build rule for target.
+RoboBankLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RoboBankLib
+.PHONY : RoboBankLib
+
+# fast build rule for target.
+RoboBankLib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/build
+.PHONY : RoboBankLib/fast
+
+#=============================================================================
 # Target rules for targets named RoboBank_Portfolio
 
 # Build rule for target.
@@ -129,12 +142,25 @@ RoboBank_Portfolio/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/build
 .PHONY : RoboBank_Portfolio/fast
 
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
 src/BaseAccount.o: src/BaseAccount.cpp.o
 .PHONY : src/BaseAccount.o
 
 # target to build an object file
 src/BaseAccount.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/BaseAccount.cpp.o
 .PHONY : src/BaseAccount.cpp.o
 
 src/BaseAccount.i: src/BaseAccount.cpp.i
@@ -142,7 +168,7 @@ src/BaseAccount.i: src/BaseAccount.cpp.i
 
 # target to preprocess a source file
 src/BaseAccount.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/BaseAccount.cpp.i
 .PHONY : src/BaseAccount.cpp.i
 
 src/BaseAccount.s: src/BaseAccount.cpp.s
@@ -150,7 +176,7 @@ src/BaseAccount.s: src/BaseAccount.cpp.s
 
 # target to generate assembly for a file
 src/BaseAccount.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/BaseAccount.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/BaseAccount.cpp.s
 .PHONY : src/BaseAccount.cpp.s
 
 src/CheckingAccount.o: src/CheckingAccount.cpp.o
@@ -158,7 +184,7 @@ src/CheckingAccount.o: src/CheckingAccount.cpp.o
 
 # target to build an object file
 src/CheckingAccount.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/CheckingAccount.cpp.o
 .PHONY : src/CheckingAccount.cpp.o
 
 src/CheckingAccount.i: src/CheckingAccount.cpp.i
@@ -166,7 +192,7 @@ src/CheckingAccount.i: src/CheckingAccount.cpp.i
 
 # target to preprocess a source file
 src/CheckingAccount.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/CheckingAccount.cpp.i
 .PHONY : src/CheckingAccount.cpp.i
 
 src/CheckingAccount.s: src/CheckingAccount.cpp.s
@@ -174,7 +200,7 @@ src/CheckingAccount.s: src/CheckingAccount.cpp.s
 
 # target to generate assembly for a file
 src/CheckingAccount.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/CheckingAccount.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/CheckingAccount.cpp.s
 .PHONY : src/CheckingAccount.cpp.s
 
 src/IAccount.o: src/IAccount.cpp.o
@@ -182,7 +208,7 @@ src/IAccount.o: src/IAccount.cpp.o
 
 # target to build an object file
 src/IAccount.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/IAccount.cpp.o
 .PHONY : src/IAccount.cpp.o
 
 src/IAccount.i: src/IAccount.cpp.i
@@ -190,7 +216,7 @@ src/IAccount.i: src/IAccount.cpp.i
 
 # target to preprocess a source file
 src/IAccount.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/IAccount.cpp.i
 .PHONY : src/IAccount.cpp.i
 
 src/IAccount.s: src/IAccount.cpp.s
@@ -198,7 +224,7 @@ src/IAccount.s: src/IAccount.cpp.s
 
 # target to generate assembly for a file
 src/IAccount.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/IAccount.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/IAccount.cpp.s
 .PHONY : src/IAccount.cpp.s
 
 src/Portfolio.o: src/Portfolio.cpp.o
@@ -206,7 +232,7 @@ src/Portfolio.o: src/Portfolio.cpp.o
 
 # target to build an object file
 src/Portfolio.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/Portfolio.cpp.o
 .PHONY : src/Portfolio.cpp.o
 
 src/Portfolio.i: src/Portfolio.cpp.i
@@ -214,7 +240,7 @@ src/Portfolio.i: src/Portfolio.cpp.i
 
 # target to preprocess a source file
 src/Portfolio.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/Portfolio.cpp.i
 .PHONY : src/Portfolio.cpp.i
 
 src/Portfolio.s: src/Portfolio.cpp.s
@@ -222,7 +248,7 @@ src/Portfolio.s: src/Portfolio.cpp.s
 
 # target to generate assembly for a file
 src/Portfolio.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/Portfolio.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/Portfolio.cpp.s
 .PHONY : src/Portfolio.cpp.s
 
 src/RoboLedger.o: src/RoboLedger.cpp.o
@@ -230,7 +256,7 @@ src/RoboLedger.o: src/RoboLedger.cpp.o
 
 # target to build an object file
 src/RoboLedger.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/RoboLedger.cpp.o
 .PHONY : src/RoboLedger.cpp.o
 
 src/RoboLedger.i: src/RoboLedger.cpp.i
@@ -238,7 +264,7 @@ src/RoboLedger.i: src/RoboLedger.cpp.i
 
 # target to preprocess a source file
 src/RoboLedger.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/RoboLedger.cpp.i
 .PHONY : src/RoboLedger.cpp.i
 
 src/RoboLedger.s: src/RoboLedger.cpp.s
@@ -246,7 +272,7 @@ src/RoboLedger.s: src/RoboLedger.cpp.s
 
 # target to generate assembly for a file
 src/RoboLedger.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/RoboLedger.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/RoboLedger.cpp.s
 .PHONY : src/RoboLedger.cpp.s
 
 src/SavingsAccount.o: src/SavingsAccount.cpp.o
@@ -254,7 +280,7 @@ src/SavingsAccount.o: src/SavingsAccount.cpp.o
 
 # target to build an object file
 src/SavingsAccount.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/SavingsAccount.cpp.o
 .PHONY : src/SavingsAccount.cpp.o
 
 src/SavingsAccount.i: src/SavingsAccount.cpp.i
@@ -262,7 +288,7 @@ src/SavingsAccount.i: src/SavingsAccount.cpp.i
 
 # target to preprocess a source file
 src/SavingsAccount.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/SavingsAccount.cpp.i
 .PHONY : src/SavingsAccount.cpp.i
 
 src/SavingsAccount.s: src/SavingsAccount.cpp.s
@@ -270,7 +296,7 @@ src/SavingsAccount.s: src/SavingsAccount.cpp.s
 
 # target to generate assembly for a file
 src/SavingsAccount.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/SavingsAccount.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/SavingsAccount.cpp.s
 .PHONY : src/SavingsAccount.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -302,7 +328,7 @@ src/robocalculator.o: src/robocalculator.cpp.o
 
 # target to build an object file
 src/robocalculator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/robocalculator.cpp.o
 .PHONY : src/robocalculator.cpp.o
 
 src/robocalculator.i: src/robocalculator.cpp.i
@@ -310,7 +336,7 @@ src/robocalculator.i: src/robocalculator.cpp.i
 
 # target to preprocess a source file
 src/robocalculator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/robocalculator.cpp.i
 .PHONY : src/robocalculator.cpp.i
 
 src/robocalculator.s: src/robocalculator.cpp.s
@@ -318,8 +344,32 @@ src/robocalculator.s: src/robocalculator.cpp.s
 
 # target to generate assembly for a file
 src/robocalculator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/src/robocalculator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/src/robocalculator.cpp.s
 .PHONY : src/robocalculator.cpp.s
+
+tests/tests.o: tests/tests.cpp.o
+.PHONY : tests/tests.o
+
+# target to build an object file
+tests/tests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/tests.cpp.o
+.PHONY : tests/tests.cpp.o
+
+tests/tests.i: tests/tests.cpp.i
+.PHONY : tests/tests.i
+
+# target to preprocess a source file
+tests/tests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/tests.cpp.i
+.PHONY : tests/tests.cpp.i
+
+tests/tests.s: tests/tests.cpp.s
+.PHONY : tests/tests.s
+
+# target to generate assembly for a file
+tests/tests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/tests.cpp.s
+.PHONY : tests/tests.cpp.s
 
 # Help Target
 help:
@@ -329,7 +379,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... RoboBankLib"
 	@echo "... RoboBank_Portfolio"
+	@echo "... tests"
 	@echo "... src/BaseAccount.o"
 	@echo "... src/BaseAccount.i"
 	@echo "... src/BaseAccount.s"
@@ -354,6 +406,9 @@ help:
 	@echo "... src/robocalculator.o"
 	@echo "... src/robocalculator.i"
 	@echo "... src/robocalculator.s"
+	@echo "... tests/tests.o"
+	@echo "... tests/tests.i"
+	@echo "... tests/tests.s"
 .PHONY : help
 
 

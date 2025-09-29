@@ -3,15 +3,30 @@
 // Operations
 void BaseAccount::deposit(long long amount_cents, long long ts, string note, string account_id) {
     // TODO: implement
-    apply_deposit(balance_cents_, amount_cents);
-    record(Deposit,amount_cents,ts, note,account_id);
+    if(amount_cents>=0){
+        apply_deposit(balance_cents_, amount_cents);
+        record(Deposit,amount_cents,ts, note,account_id);
+    }
+    
 }
 
 void BaseAccount::withdraw(long long amount_cents, long long ts, string note, string account_id) {
     // TODO: implement
+    if(amount_cents>=0){
     apply_withdrawal(balance_cents_, amount_cents);
     record(Withdrawal,amount_cents,ts, note,account_id);
+    }
 }
+
+void BaseAccount::charge_fee(long long fee_cents, long long ts,
+                        const string note, string account_id) {
+    // TODO: implement
+        if(fee_cents>=0){
+    apply_fee(balance_cents_, fee_cents);
+    record(Fee,fee_cents,ts, note,account_id);
+    }
+}
+
 void BaseAccount::post_simple_interest(int days, int basis, long long ts, string note, string account_id) {
     // TODO: implement
 
@@ -22,7 +37,6 @@ void BaseAccount::post_simple_interest(int days, int basis, long long ts, string
                               days,
                               basis);
     long long newInterest = static_cast<long long>(interest);
-
     record(Interest,newInterest,ts, note,account_id);
 
     balance_cents_ += newInterest;
@@ -31,15 +45,20 @@ void BaseAccount::post_simple_interest(int days, int basis, long long ts, string
 void BaseAccount::apply(const TxRecord& tx) {
     // TODO: implement
         switch(tx.kind){
-        case TxKind::Deposit: 
+        case TxKind::Deposit:
+        case TxKind::TransferIn:
             apply_deposit(balance_cents_, tx.amount_cents);
         break;
-        case TxKind::Withdrawal:  
+
+        case TxKind::Withdrawal:
+        case TxKind::TransferOut:
             apply_withdrawal(balance_cents_, tx.amount_cents);
             break;
+
         case TxKind::Fee:
             apply_fee(balance_cents_, tx.amount_cents);
             break;
+            
         case TxKind::Interest:
                 //apply intreset
             break;

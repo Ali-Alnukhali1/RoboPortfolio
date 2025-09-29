@@ -1,3 +1,5 @@
+/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles/RoboBankLib.dir
 /home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles/RoboBank_Portfolio.dir
+/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles/tests.dir
 /home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles/edit_cache.dir
 /home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles/rebuild_cache.dir

@@ -63,7 +63,9 @@ CMAKE_BINARY_DIR = /home/fathi/training_projects/RoboBank_Portfolio/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/RoboBankLib.dir/all
 all: CMakeFiles/RoboBank_Portfolio.dir/all
+all: CMakeFiles/tests.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,22 +73,50 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/RoboBankLib.dir/clean
 clean: CMakeFiles/RoboBank_Portfolio.dir/clean
+clean: CMakeFiles/tests.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/RoboBankLib.dir
+
+# All Build rule for target.
+CMakeFiles/RoboBankLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target RoboBankLib"
+.PHONY : CMakeFiles/RoboBankLib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/RoboBankLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RoboBankLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles 0
+.PHONY : CMakeFiles/RoboBankLib.dir/rule
+
+# Convenience name for target.
+RoboBankLib: CMakeFiles/RoboBankLib.dir/rule
+.PHONY : RoboBankLib
+
+# clean rule for target.
+CMakeFiles/RoboBankLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBankLib.dir/build.make CMakeFiles/RoboBankLib.dir/clean
+.PHONY : CMakeFiles/RoboBankLib.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/RoboBank_Portfolio.dir
 
 # All Build rule for target.
-CMakeFiles/RoboBank_Portfolio.dir/all:
+CMakeFiles/RoboBank_Portfolio.dir/all: CMakeFiles/RoboBankLib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target RoboBank_Portfolio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=9,10 "Built target RoboBank_Portfolio"
 .PHONY : CMakeFiles/RoboBank_Portfolio.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RoboBank_Portfolio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RoboBank_Portfolio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles 0
 .PHONY : CMakeFiles/RoboBank_Portfolio.dir/rule
@@ -99,6 +129,32 @@ RoboBank_Portfolio: CMakeFiles/RoboBank_Portfolio.dir/rule
 CMakeFiles/RoboBank_Portfolio.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RoboBank_Portfolio.dir/build.make CMakeFiles/RoboBank_Portfolio.dir/clean
 .PHONY : CMakeFiles/RoboBank_Portfolio.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tests.dir
+
+# All Build rule for target.
+CMakeFiles/tests.dir/all: CMakeFiles/RoboBankLib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles --progress-num=11,12 "Built target tests"
+.PHONY : CMakeFiles/tests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fathi/training_projects/RoboBank_Portfolio/build/CMakeFiles 0
+.PHONY : CMakeFiles/tests.dir/rule
+
+# Convenience name for target.
+tests: CMakeFiles/tests.dir/rule
+.PHONY : tests
+
+# clean rule for target.
+CMakeFiles/tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/clean
+.PHONY : CMakeFiles/tests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -4,9 +4,8 @@ project(RoboBank_Portfolio)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
-set(SRC_FILES
-    src/main.cpp
+# Shared library for your project
+add_library(RoboBankLib
     src/BaseAccount.cpp
     src/CheckingAccount.cpp
     src/SavingsAccount.cpp
@@ -16,13 +15,15 @@ set(SRC_FILES
     src/IAccount.cpp
 )
 
-# Create executable
-add_executable(RoboBank_Portfolio ${SRC_FILES})
+target_include_directories(RoboBankLib PUBLIC src)
+target_compile_options(RoboBankLib PRIVATE -Wall -Wextra -pedantic)
 
+# Main executable
+add_executable(RoboBank_Portfolio src/main.cpp)
+target_link_libraries(RoboBank_Portfolio PRIVATE RoboBankLib)
 
-target_compile_options(RoboBank_Portfolio PRIVATE -Wall -Wextra -pedantic)
-
-target_include_directories(RoboBank_Portfolio PRIVATE src)
-# Link Google Test
+# Tests executable
 find_package(GTest REQUIRED)
-target_link_libraries(RoboBank_Portfolio PRIVATE GTest::GTest GTest::Main pthread)
+add_executable(tests src/tests.cpp)
+target_link_libraries(tests PRIVATE RoboBankLib GTest::GTest GTest::Main pthread)
+target_compile_options(tests PRIVATE -Wall -Wextra -pedantic)
