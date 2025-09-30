@@ -21,8 +21,8 @@ jobs:
           mkdir build
           cd build
           cmake ..
-          make
-          make install
+          make -j
+          sudo make install
 
       - name: build the project
         run: |
