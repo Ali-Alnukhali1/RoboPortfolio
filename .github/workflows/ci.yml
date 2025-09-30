@@ -13,7 +13,7 @@ jobs:
 
       - name: install the requred dependencies
         run: |
-          apt-get update
+          sudo apt-get update
           apt-get install -y  g++ cmake git make 
 
       - name: build the project
