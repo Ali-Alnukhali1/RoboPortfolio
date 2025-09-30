@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build_ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: install the requred dependencies
+        run: |
+          apt-get update
+          apt-get install -y  g++ cmake git make 
+
+      - name: build the project
+        run: |
+          mkdir -p build 
+          cd build
+          cmake ..
+          make
+
+      - name: Run the project
+        run: ./build/tests
+
