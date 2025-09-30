@@ -11,26 +11,11 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v4
 
-      - name: install the requred dependencies
-        run: sudo apt install -y  g++ cmake git make 
+      - name: Build Docker Image 
+        run: docker build -t robobank-portfolio -f docker/Dockerfile .
 
-      - name: intall google tests
-        run: |
-          git clone https://github.com/google/googletest.git
-          cd googletest
-          mkdir build
-          cd build
-          cmake ..
-          make -j
-          sudo make install
+      
+      - name: Run Docker Container 
+        run: run --rm robobank-portfolio
 
-      - name: build the project
-        run: |
-          mkdir -p build 
-          cd build
-          cmake ..
-          make
-
-      - name: Run the project
-        run: ./build/tests
 
