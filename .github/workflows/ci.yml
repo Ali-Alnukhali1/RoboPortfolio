@@ -16,6 +16,6 @@ jobs:
 
       
       - name: Run Docker Container 
-        run: run --rm robobank-portfolio
+        run: docker run --rm robobank-portfolio
 
 
