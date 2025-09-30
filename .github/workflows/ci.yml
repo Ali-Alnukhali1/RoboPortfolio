@@ -12,9 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: install the requred dependencies
-        run: |
-          sudo apt-get update
-          apt-get install -y  g++ cmake git make 
+        run: sudo apt install -y  g++ cmake git make 
 
       - name: build the project
         run: |
