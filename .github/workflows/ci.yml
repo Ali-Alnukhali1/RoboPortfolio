@@ -14,6 +14,12 @@ jobs:
       - name: install the requred dependencies
         run: sudo apt install -y  g++ cmake git make 
 
+      - name: intall google tests
+        run: |
+          git clone https://github.com/google/googletest.git
+          cd googletest && mkdir build && cd build &&
+          cmake .. && make && make install
+
       - name: build the project
         run: |
           mkdir -p build 
