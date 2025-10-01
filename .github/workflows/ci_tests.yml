@@ -1,4 +1,4 @@
-name: CI
+name: CI_tests
 # -j: build faster by working in parallel (all CPU cores)
 on:
   push:
