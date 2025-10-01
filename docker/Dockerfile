@@ -22,7 +22,9 @@ RUN git clone https://github.com/google/googletest.git && \
 
 #copy the source files for the main projects and the tests
 COPY CMakeLists.txt .
+COPY include/ ./include
 COPY src/ ./src
+COPY tests/ ./tests
 
 #Build the project
 RUN mkdir -p build &&\
@@ -31,7 +33,7 @@ RUN mkdir -p build &&\
     make
 
 #run the main file and run the tests file
-CMD ["sh","-c","./build/RoboBank_Portfolio && ./build/tests"]
+CMD ["sh","-c","./build/RoboBank_Portfolio && ./tests/tests"]
 
 
 

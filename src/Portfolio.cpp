@@ -2,7 +2,7 @@
 using namespace std;
 
 void Portfolio::add_Account(unique_ptr<BaseAccount> account) {
-    // TODO: insert into accounts_ using account->id() as key
+    // Implementation note: inserts into the accounts_ map using account->id() as key
     if(!account) return;
 
     accounts_[account->id()] = move(account);
@@ -10,7 +10,7 @@ void Portfolio::add_Account(unique_ptr<BaseAccount> account) {
 }
 
 BaseAccount* Portfolio::get_Account(const string& id) {
-    // TODO: look up in accounts_, return raw pointer or nullptr
+    // Implementation note: lookup in accounts_, return raw pointer or nullptr
     auto it = accounts_.find(id);
     if(it!=accounts_.end()){
         return it->second.get();
@@ -20,13 +20,12 @@ BaseAccount* Portfolio::get_Account(const string& id) {
 }
 
 int Portfolio::Accounts_count() const {
-    // TODO: return accounts_.size()
+    // Implementation note : return the number of accounts added
     return static_cast<int> (accounts_.size());
 }
 
 void Portfolio::apply_all(const vector<TxRecord>& txs) {
-    // TODO: iterate over txs, dispatch each to the matching account->apply()
-    // also record tx in records_
+    // Implementation note: apply each TxRecord to its account and store in records_
     for (const auto& tx: txs){
         BaseAccount* acc = get_Account(tx.account_id);
         if(acc){
@@ -44,7 +43,7 @@ void Portfolio::apply_from_ledger(const string ids[],
                                   const int kinds[],
                                   const long long amounts[],
                                   int count) {
-    // TODO: loop through parallel arrays, build TxRecord for each, and call apply_all()
+    // Convert parallel ledger arrays into TxRecord vector
     vector<TxRecord> txs;
     txs.reserve(count);
 
@@ -62,8 +61,7 @@ void Portfolio::apply_from_ledger(const string ids[],
 }
 
 void Portfolio::transfer(const TransferRecord& tr) {
-    // TODO: withdraw from src account, deposit to dst account,
-    // add TxRecords for TransferOut and TransferIn
+    // Withdraw from src, deposit to dst, log both TransferOut and TransferIn
     BaseAccount* src = get_Account(tr.from_id);
     BaseAccount* dst = get_Account(tr.to_id);
 
@@ -90,8 +88,7 @@ void Portfolio::transfer(const TransferRecord& tr) {
 }
 
 long long Portfolio::total_exposure() const {
-    // TODO: accumulate balances from all accounts and return sum
-
+    // Sum balances of all accounts
     long long total = 0;
     for(const auto& [id,acc]:accounts_){
         total +=acc->balance_cents();

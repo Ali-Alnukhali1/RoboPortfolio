@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Portfolio.hpp"
-#include "SavingsAccount.cpp"
-#include "CheckingAccount.cpp"
+#include "SavingsAccount.hpp"
+#include "CheckingAccount.hpp"
 
 using namespace std;
 
