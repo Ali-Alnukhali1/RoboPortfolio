@@ -1,0 +1,36 @@
+name: CI_tests
+# -j: build faster by working in parallel (all CPU cores)
+on:
+  push:
+  pull_request:
+
+jobs:
+  build_ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      
+      - name: install the requred dependencies
+        run: sudo apt install -y  g++ cmake git make 
+
+      - name: intall google tests
+        run: |
+          git clone https://github.com/google/googletest.git
+          cd googletest
+          mkdir build
+          cd build
+          cmake ..
+          make -j            
+          sudo make install
+          
+      - name: build the project
+        run: |
+          mkdir -p build 
+          cd build
+          cmake ..
+          make
+
+      - name: Run the project
+        run: ./tests/tests
+
